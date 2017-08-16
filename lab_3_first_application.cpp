@@ -82,7 +82,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT uMessage, WPARAM wParam, LPARAM lParam)
 		}
 		else if (wParam == CLOSE_TIMER) {
 		//	KillTimer(hWnd, CLOSE_TIMER);
-			if (MessageBox(hWnd, _TEXT("Вы действительно хотите завершить работу приложения?"), _TEXT("Информация"), MB_YESNO) == IDYES) {
+			if (MessageBox(hWnd, _TEXT("Г‚Г» Г¤ГҐГ©Г±ГІГўГЁГІГҐГ«ГјГ­Г® ГµГ®ГІГЁГІГҐ Г§Г ГўГҐГ°ГёГЁГІГј Г°Г ГЎГ®ГІГі ГЇГ°ГЁГ«Г®Г¦ГҐГ­ГЁГї?"), _TEXT("Г€Г­ГґГ®Г°Г¬Г Г¶ГЁГї"), MB_YESNO) == IDYES) {
 				DestroyWindow(hWnd);
 			}
 		}
@@ -92,7 +92,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT uMessage, WPARAM wParam, LPARAM lParam)
 		PostQuitMessage(0);
 		break;
 	case WM_CLOSE:
-		if (MessageBox(hWnd, _TEXT("Вы действительно хотите завершить работу приложения?"), _TEXT("Информация"), MB_YESNO) == IDYES){
+		if (MessageBox(hWnd, _TEXT("Г‚Г» Г¤ГҐГ©Г±ГІГўГЁГІГҐГ«ГјГ­Г® ГµГ®ГІГЁГІГҐ Г§Г ГўГҐГ°ГёГЁГІГј Г°Г ГЎГ®ГІГі ГЇГ°ГЁГ«Г®Г¦ГҐГ­ГЁГї?"), _TEXT("Г€Г­ГґГ®Г°Г¬Г Г¶ГЁГї"), MB_YESNO) == IDYES){
 			DestroyWindow(hWnd);
 		}
 		break;
