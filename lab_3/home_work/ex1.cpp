@@ -177,14 +177,14 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT uMessage, WPARAM wParam, LPARAM lParam)
 		}
 		else if (wParam == CLOSE_TIMER) {
 			KillTimer(hWnd, CLOSE_TIMER);
-			if (MessageBox(hWnd, _TEXT("Do you want exit?"), _TEXT("Exit"), MB_YESNO) == IDYES) {
+			if (MessageBox(hWnd, _TEXT("Do you want to exit?"), _TEXT("Exit"), MB_YESNO) == IDYES) {
 				DestroyWindow(hWnd);
 			}
 		}
 		break;
 
 	case WM_CLOSE:
-		if (MessageBox(hWnd, _TEXT("Do you want exit?"), _TEXT("Exit"), MB_YESNO) == IDYES){
+		if (MessageBox(hWnd, _TEXT("Do you want to exit?"), _TEXT("Exit"), MB_YESNO) == IDYES){
 			DestroyWindow(hWnd);
 		}
 		break;
